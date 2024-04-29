@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Snitch Privacy Extension",
+    "version": "1.0",
+    "description": "Helps protect your privacy online by alerting you to tracking scripts and offering privacy advice.",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "React Boilerplate",
+        "default_icon": "snitch.png"
+    },
+    "permissions": [
+        "tabs",
+        "bookmarks",
+        "webRequest",
+        "storage",
+        "identity"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "48": "snitch.png",
+        "128": "snitch.png"
+    }
+}
